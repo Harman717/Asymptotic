@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  <!-- <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script> -->
+</head>
+<meta charset="utf-8">
+<style type="text/css">
+  .chartbox {
+    width: 100%;
+    height: 400px;
+  }
+</style>
+<body>
+  <nav class="navbar">
+    <a href="main.html" class="navbar__logo">COMPLEXY</a>
+    <div class="navbar__toggle" id="mobile-menu">
+    </div>
+  </nav>
+  <h1>Asymptotic Notations Plot</h1>
+  <div class ="box">
+    <h1 >INSTRUCTIONS FOR ALGEBRAIC EXPRESSION</h1>
+    <ul>
+      <li>Use 'n' as a parameter for your algebraic equation</li>
+      <li>You can make use of following symbols:
+        <ol>
+          <li>Arithmetic operators - '*' , '+' , '-'</li>
+          <li>Power operator - '^'</li>
+        </ol>
+      </li>
+      <li>Increment and decrement is not allowed</li>
+      <li>Logical operators are not allowed</li>
+      <li>Log can be used in this form - log(n),nlog(n) </li>
+    </ul>
+  </div>
+  <div class ="data">
+    <input type="text" id="input-field" placeholder="Enter a function">
+    <button id = "my-button" class = "btn">BIG O</button>
+    <div class="chartbox">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+  
+ <script src="main.js"></script>
+</body>
+
+</html>
